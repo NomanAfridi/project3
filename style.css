@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#home{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+/* Nav Bar */
+header nav{
+    width: 92%;
+    height: auto;
+    margin:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav label{
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: 600;
+}
+nav label span{
+    color: tomato;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 10px 0 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+nav ul li a:hover{
+    color: black;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: tomato;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav .bx-menu{
+    font-size: 40px;
+    display: none;
+    margin: 0 10px;
+}
+/* Main Header */
+.container_header{  
+    width: 100%;
+    height: 90vh;
+    background-image: url("imgs/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:center; */
+    z-index: -1;
+}
+/* Text */
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.text-box h1{
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+}
+.text-box h1 span{
+    color: tomato;
+}
+.text-box p{
+    margin-top: 34px;
+    font-size: 20px;
+    color: gray;
+    font-weight: 100;
+}
+ 
+.Icons{
+    position: fixed;
+    top: 20%;
+    right: 0;
+    font-size: 30px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgb(255, 139, 61,0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 50px;
+    z-index: 100;
+}
+.Icons .bx{
+    margin: 10px 0;
+    color: black;
+   
+}
+.blue:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+.insta:hover{
+    background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+color: white;
+border-radius: 5px;
+}
+.discord:hover{
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+.twitter:hover{
+    background-color: rgb(63, 124, 239);
+    color: white;
+    border-radius: 5px;
+}
+.mainButtons{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
+.mainButtons .download{
+    text-decoration: none;
+    padding: 14px 20px;
+    background-color: #ff8b3d;
+    margin: 0 5px;
+    border-radius: 2px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s all ease-in;
+    border: 2px solid #ff8b3d;
+}
+.download:hover{
+    color: #ff8b3d;
+    border: 3px solid #ff8b3d;
+    background-color: #E9E9E9;
+}
+.mainButtons .more{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 14px 20px;
+    background-color: #ff8b3d;
+    margin: 0 10px;
+    border-radius: 2px;
+    background-color: #E9E9E9;
+    color: #ff8b3d;
+    border: 2px solid #ff8b3d;
+    transition: 0.3s all ease-in;
+}
+.more:hover{
+    color: white;
+    background-color: #ff8b3d;
+    box-shadow: 1px 5px 14px -1px rgba(0,0,0,0.25);
+}
+
+/* Section */
+.container{
+    margin:10% 0;
+}
+
+.introHeading{
+    font-size: 50px;
+    margin: 0 0 2% 0 ;
+    text-align: center;
+}
+.intro{
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 8% 0; 
+}
+.text{
+    font-size: larger;
+}
+
+/* Section2 */
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+
+/* Section3 */
+.Card{
+    padding: 10px;
+    transition: 0.5s all ease;
+}
+.anim3 p{
+    font-size: larger;
+    margin-bottom: 40px;
+}
+.Card .cardBanner{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.firstImg{
+    height: 40px;
+    border-radius: 30px;
+}
+.cardIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.cardIcons{
+    border-bottom: 3px solid whitesmoke;
+}
+.leftIcons{
+    font-size: 22px;
+}
+.leftIcons img{
+    width: 40px;
+}
+.rightIcons{
+    font-size: 18px;
+}
+.Card h4{
+    color:tomato;
+    font-size: 20px;
+}
+.Card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px 0 black;
+}
+
+/* contact */
+.contactus{
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(330deg, tomato 55%, #fff 0%)
+}
+
+.form-button button{
+    border: 1px solid tomato;
+    border-radius:100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+.form-button button:hover{
+    color: tomato;
+}
+
+form:hover .form-button button{
+    color:#50d1c0;
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* Footer */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 90px 8px;
+}
+.footerText{
+    color: gray;
+    font-size: large;
+    font-weight: 600;
+}
+#inp{
+    width: 100%;
+    padding: 8px ;
+    outline: none;
+    color: #ff8b3d;
+    background-color: whitesmoke;
+    font-size: larger   ;
+}
+.social{
+    width: 100%;
+}
+.social i{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    background-color: gray;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.social .bx{
+    font-size: 40px;
+}
+.social .bxl-facebook:hover{
+    background-color: rgba(0, 0, 255, 0.877);
+}
+.social .bxl-twitter:hover{
+    background-color: cornflowerblue;
+}
+.social .bxl-discord-alt:hover{
+    background-color: cornflowerblue;
+}
+.bxl-instagram-alt{
+    transition: 0.3s all ease ;
+}
+.social .bxl-instagram-alt:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.committedText{
+    font-size: large;
+    line-height:normal;
+    color: gray;
+}
+
+.col-sm-3 .navs{
+    padding-left: 28px;
+}
+.col-sm-3 ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
+.col-sm-3 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.col-sm-2 ul li{
+    line-height: 30px;
+    list-style-type: none;
+}
+.col-sm-2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* Animations Creation */
+.main{
+    opacity: 0;
+}
+.main .animate__animated .animate__fadeInLeft{
+    opacity: 1;
+}
+.anim1{
+    opacity: 0;
+}
+.anim1 .animate__fadeInUp{
+    opacity: 1;
+}
+.anim2{
+    opacity: 0;
+}
+.anim2 .animate__fadeInUp{
+    opacity: 1;
+}
+
+.left{
+    opacity: 0;
+}
+.left .animate__fadeInLeft{
+    opacity: 1;
+}
+.up{
+    opacity: 0;
+}
+.up .animate__fadeInUp{
+    opacity: 1;
+}
+
+.down{
+    opacity: 0;
+}
+.down .animate__fadeInDown{
+    opacity: 1;
+}
+.right{
+    opacity: 0;
+}
+.right .animate__fadeInRight{
+    opacity: 1;
+}
+.anim3{
+    opacity: 0;
+}
+.anim3 .animate__fadeInLeft{
+    opacity: 1;
+}
+
+.anim4{
+    opacity: 0;
+}
+.anim4 .animate__fadeInUp{
+    opacity: 1;
+}
+.anim5{
+    opacity: 0;
+}
+.anim5 .animate__fadeIn{
+    opacity: 1;
+}
+.anim6{
+    opacity: 0;
+}
+.anim6 .animate__fadeInRight{
+    opacity: 1;
+}
+.anim7{
+    opacity: 0;
+}
+.anim7 .animate__fadeIn{
+    opacity: 1;
+}
+.anim8{
+    opacity: 0;
+}
+.anim8 .animate__fadeIn{
+    opacity: 1;
+}
+/* //////////////////// */
+
+
+
+
+
+
+
+/* All Medai Queries */
+
+@media(max-width:1440px){
+    .mainButtons{
+        top: 70%;
+    }
+}
+
+@media(max-width:1024px){
+    .mainButtons{
+        top: 60%;
+    }
+}
+
+
+
+@media(max-width:768px){
+    nav .bx-menu{
+        display: block;
+    }
+    nav{
+       width: 92%;
+    }
+   nav ul{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: rgb(255, 139, 61 ,0.9);
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all .5s;
+    z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        color: rgb(255, 255, 255);
+    }
+    nav ul li a:hover::after{
+        background-color: white;
+    }
+    .text-box h1{
+        font-size: 50px;
+    }
+    .Icons{
+        width: 40px;
+    }
+    .mainButtons{
+        top: 67%;
+    }
+    .mainButtons .download{
+        font-size: smaller;
+        padding: 5px 10px;
+    }
+    .mainButtons .more{
+        padding: 5px 10px;
+        font-size: smaller;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .introHeading{
+        font-size: 28px;
+    }
+
+}
+
+
+
+
+@media(max-width:480px){
+    nav label{ 
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    nav .bx-menu{
+        font-size: 30px;
+        
+    }
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 13px;
+    }
+    .mainButtons{
+        top: 68%;
+    }
+    .mainButtons .download{
+        font-size: smaller;
+        padding: 5px 10px;
+    }
+    .mainButtons .more{
+        padding: 5px 10px;
+        font-size: smaller;
+    }
+    .Icons{
+        display: none;
+    }
+    .introHeading{
+        font-size: 25px;
+    }
+    .intro{
+        font-size: 13px;
+    }
+    .text{
+        font-size: 12px;
+    }
+}
+
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
